@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <h1>Formularios</h1>
+        </header>
+
+        <form action="">
+            <h2>atributos siempre en los input</h2>
+                <p>Disable: bloquea esa opción y no la Enviar</p>
+                <p>Readonly + value="alguien@sitio.com" lo envía pero no se puede editar</p>
+                <p>Autofocus: destaca ese campo</p>
+                <p>placeholder: "Escribe aquí la URL de tu web</p>
+                <p>Required: este campo es obligatorio</p>
+            <fieldset>
+                <legend>Datos de loging</legend>
+                <!--nunca usaremos un legend en lugar de un label-->
+                <ul>
+                    <li>
+                        <label for="usuario">Usuario</label>
+               
+                        <input type="text" id="usuario" name="usuario" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="pass">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <p>
+                    <label for="num">Número</label>
+                    <input type="num" id="num" name="num" disable>
+                </p>
+                <p>
+                    <label for="tel"></label>
+                    <input type="tel" id="tel" name="tel" autofocus>
+                </p>
+                <p>
+                    <label for="web"></label>
+                    <input type="url" id="web" name="web" placeholder="Escribir aquí tu dirección web">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>OOtro tipo de campos</legend>
+                <p>
+                    <input checked type="checkbox" id="check" name="check">
+                    <label for="Check">Acepto la poítica de privacidad</label>
+                </p>
+                <p>
+                    <input checked type="checkbox" id="check2" name="check">
+                    <label for="check2">Acepto la política de privacidad</label>
+                </p>
+              
+
+            </fieldset>
+            <fieldset>
+                <legend>Género</legend>
+                <ul>
+                    <li>
+                        <input type="radio" id="man" name="gender" required>
+                        <label for="man">hombre</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="woman" name="gender">
+                        <label for="Woman">mujer</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="other" name="gender">
+                        <label for="other">Otro</label>
+                    </li>
+                </ul>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Desplegable</legend>
+                <label for="simpsons">Personaje favorito de los Simpsons</label>
+                <select name="simpsons" id="simpsons">
+                    <option value="">HOmer</option>
+                    <option value="">Lissa</option>
+                    <option value="">Bart</option>
+                    <option value="">Marge"</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>Textarea</legend>
+                <label for="comentario">comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar
+            </button>
+            <button type="reset">Borrar</button>
+            <button type="button">Click!</button>
+            
+        </form>
+    </body>
+</html>
