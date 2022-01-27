@@ -1,0 +1,127 @@
+<!DOCTYPE htlm>
+<html>
+    <head>
+        <!-- metadatos-->
+        <title>Tablas</title>
+        <Meta charset="utf8"></Meta>
+    </head>
+    <body>
+        <header>
+            <H1>Tablas</H1>
+            <nav>
+                <menu>
+                    <li><a href="/index.html"></a>
+                    </li>
+                    <li><a href="/Dia_2/Listas.html"></a></li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <p>Las tablas son para representar contenido tabular en un conjunto de filas y columnas</p>
+            <p>Las tablas NO son para maquetar</p>
+            <p>Aunque no tegamos etiquetas para definir columnas per se, todas las filas deben tener el mismo número de columnas</p>
+            <section>
+                <h2>Tabla básica</h2>
+               <table border="1">
+                   <p>El atributo border es estético, solo se lo pongo para aclararme, luego se lo tengo que quitar</p>
+                   <!-- table row -->
+                    <tr>
+                        <th></th>
+                        <th>C1</th>
+                        <th>C2</th>
+                        <th>C3</th>
+                        <th>C4</th>
+                        <th>C5</th>
+                    </tr>
+                   <tr>
+                       <!-- Dentro de tr  solo puede ir td o th-->
+                       <!-- table header-->
+                       <!-- table data -->
+                       <th>Fila A</th>
+                       <td>Dato1</td>
+                       <td>Dato2</td>
+                       <td>Dato3</td>
+                       <td></td>
+                       <td>Dato4</td>
+                   </tr>
+                   <tr>
+                       <th>Fila B</th>
+                       <td>Dato6</td>
+                       <td></td>
+                       <td>Dato7</td>
+                       <td>Dato8</td>
+                       <td>Dato9</td>
+                   </tr>
+               </table>
+
+            </section>
+            <section>
+                <h2>Tabla compleja</h2>
+                <table border="1">
+                    <tr>
+                        <td colspan="3">dato 1</td>
+
+                        <td>dato 4</td>
+                    </tr>
+                    <tr>
+                        <td>dato 1</td>
+                        <td rowspan="2" colspan="2">dato 2</td>
+                        
+                        <td rowspan="3">dato 4</td>
+                    </tr>
+                    <tr>
+                        <td>dato 1</td>
+                       
+                       
+                    </tr>
+                    <tr>
+                        <td>dato 1</td>
+                        <td>dato 2</td>
+                        <td>dato 3</td>
+                        
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Tablas semánticas</h2>
+                <p>Podemos usar etiquetas para separar las partes de las tablas</p>
+                <table border="1"> 
+                    <caption>
+                        Título de la tabla
+                    </caption> 
+                    <thead>
+                        <!-- cabecera de la tabla-->
+                        <tr>
+                            <th></th>
+                            <th>Columna1</th>
+                            <th>Columna2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Fila 1</th>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                        </tr>
+                        <tr>
+                            <th>Fila 2</th>
+                            <td>Dato</td>
+                            <td>Dato</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+            </section>
+
+        </main>
+        <footer>
+            
+
+        </footer>
+    </body>
+</html>

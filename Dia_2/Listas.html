@@ -1,0 +1,101 @@
+<!DOCTYPE htlm>
+<html>
+    <head>
+        <!-- metadatos-->
+        <title>Listas</title>
+        <Meta charset="utf8"></Meta>
+    </head>
+    <body>
+        <header>
+            <H1>Listas</H1>
+            <nav>
+                <h2>Menú</h2>
+                <menu>
+                    <li><a href="/Dia_2/index.html">Inicio</a></li>
+                    <li><a href="/Dia_2/ejemplos-listas.html">Ejmeplos listas<e/a></li>
+                    <li><a href="/Dia_2/">Día2</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <p>Dentro de listas ordenadas o desordenadas solo puede haber elementos de lista (list items)</p>
+            <p>Dentro de un elemento de lista (li) puede haber prácticamente cualquier cosa</p>
+            <section>
+                <h2>Listas desordenadas</h2>
+                <p>El orden no importa (pero no se va a desordenar)</p>
+                <!-- unordered list-->
+                <ul>
+                    <!-- list items-->
+                    <li>Elemento </li>
+                    <li>Elemento </li>
+                    <li>Elemento </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Listas ordenadas</h2>
+                <p>El orden importa. con el atributo reversed va al revés</p>
+                <!-- Ordered list-->
+                <ol>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ol>
+                <ol reversed>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Listas anidadas</h2>
+                <ul>
+                    <li>
+                        <h3>Elemento</h3>
+                        <ol>
+                            <li>Subelemento 1</li>
+                            <li>Subelemento 2</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Elemento</h3>
+                        <ul>
+                            <li>Subelementoa</li>
+                            <li>Subelemento <B></B></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Menú</h2>
+                <p>Es una lista desordenada (ul) pero con valor semántico</p>
+                <p>Indica que podemos interactuar con los elementos</p>
+                <menu>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="http://google.com">google</a></li>
+                    <li><button>Click!</button></li>
+                </menu>
+            </section>
+            <section>
+                <h2>Lista de definiciones</h2>
+                <p>Es la única que no tiene elementos de lista (li). Sirve unicamente para definiciones</p>
+                <!-- Description list-->
+                <dl>
+                    <!--Description term-->
+                    <dt>
+                        HTML
+                    </dt>
+                    <!-- Description Definition/Details-->
+                    <dd>
+                        Lenguaje de marcado de hipertexto para escribir páginas web
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>css</dt>
+                    <dd>Hojas de estilo para crear páginas web</dd>
+                </dl>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
