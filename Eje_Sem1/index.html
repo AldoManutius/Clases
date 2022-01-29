@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML 3</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Formularios</h1>
+      <nav>
+        <menu>
+          <li>
+            <a href="#datos">Datos de contacto</a>
+            <a href="#sitio">Dirección web</a>
+            <a href="#tiempo">Control del tiempo</a>
+            <a href="#preferencias">Sobre ti</a>
+            <a href="#buscador">Buscador</a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <form action="formulario" method="get">
+        <fieldset>
+          <legend id="datos">Datos de contacto</legend>
+          <ul>
+            <li>
+              <label for="usuario">Nombre</label>
+              <input type="text" id="usuario" name="usuario" required autofocus>
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </li>
+            <li>
+              <label for="tel">Teléfono</label>
+              <input type="tel" id="tel" name="tel">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend id="sitio">Sitio web</legend>
+          <ul>
+            <li>
+              <label for="web">Dirección web</label>
+              <input type="url" id="web" name="web" placeholder="Escribe la URL de tu página web personal">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend id="tiempo">Control de tiempo</legend>
+          <ul>
+            <li>
+              <label for="month">Mes</label>
+              <input type="month" id="month" name="month" value="2022-01">
+            </li>
+            <li>
+              <label for="week">Semana</label>
+              <input type="week" id="week" name="week" value="2022-W01">
+            </li>
+            <li>
+              <label for="date">Fecha</label>
+              <input type="date" id="date" name="date" value="2022-01-01">
+            </li>
+            <li>
+              <label for="datetime-local">Fecha y hora</label>
+              <input type="datetime-local" id="datetime-local" name="datetime-local" value="2022-01-01T23:00:00">
+            </li>
+            <li>
+              <label for="time">Hora</label>
+              <input type="time" id="time" name="time" value="23:00">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend id="preferencias">Sobre ti</legend>
+          <ul>
+            <li>
+              <label for="number">Elige uno de estos números</label>
+              <input type="number" id="number" name="number" min="-10" max="10">
+            </li>
+            <li>
+              <label for="color">Cual es tu color favorito</label>
+              <input type="color" id="color" name="color" value="#FDFEFE" >
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend id="buscador">Buscador</legend>
+          <ul>
+            <li>
+              <label for="search">Buscador</label>
+              <input type="search" id="search" name="search" disabled>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer><h6>©Alex Martín 2022</h6></footer>
+  </body>
+</html>
