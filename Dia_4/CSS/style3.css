@@ -1,0 +1,33 @@
+@import url(/Cabecera.css);
+
+/*Varios selectores en bloque*/
+p, 
+li {
+    color: blue;
+
+}
+
+/*Descendiente directo*/
+div p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body p{
+    text-decoration: underline;
+}
+
+/*descendiente directo (hijo)*/
+body > p{
+    background: blueviolet;
+}
+
+/*hermano adyacente*/
+
+p + a {
+    font-weight: bold;
+}
+
+/* Hermano (siempre los siguientes)*/
+
+:checked +label {
+    font-weight: bold;
+}

@@ -1,0 +1,64 @@
+@import url(Cabecera.css);
+
+/*Importancia*/
+/Las reglas con important se aplican siempre que no choquen con otras reglas con important*/
+
+
+h1{
+    color: aqua !important;
+}
+
+h1{
+    color: red;
+}
+
+/*Especificidad*/
+
+p{
+    color: green;
+}
+
+.parrafo {
+    color: blueviolet;
+}
+
+#unico {
+    color: red;
+}
+
+/*Herencia*/
+ul{
+    color: blue;
+    text-decoration: underline;
+}
+li a{
+    color: red;
+}
+
+* {
+    text-decoration: none;
+   
+}
+
+div{
+    border: 2px red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div p {
+    border: inherit;
+    font-family: initial;
+}
+
+p{
+    color: blueviolet;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+

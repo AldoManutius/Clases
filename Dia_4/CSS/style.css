@@ -1,0 +1,76 @@
+/*comentarios de css*/
+@import url(Cabecera.css);
+
+/*Selectores por elemento*/
+p {
+    color: rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+* {
+    background-color: sandybrown;
+}
+
+span {
+    color: red;
+}
+
+strong {
+    font-weight: normal;
+    color: red;
+}
+
+em {
+    font: normal;
+    color: green;
+}
+/*Selectores por clase*/
+.importante {
+    font-weight: bold;
+}
+li.importante {
+    font-style: italic;
+}
+
+.grande {
+    font-size: 1.3rem;
+}
+
+/*Selector por id*/
+
+#unico{
+    background: black;
+    color: white;
+}
+
+li#unico{
+    font-style: italic;
+}
+p#unico{
+    text-decoration: underline;
+}
+
+/*Selectores por atributos*/
+
+[title]{
+    color: tomato;
+}
+p[lang]{
+    font-style: italic;
+}
+[lang="gl"]{
+    background: white;
+    color: lightblue;
+}
+
+/*Que tengan un atributo cuyo valor empiece por..*/
+
+[href^="http"]{
+    font-size: 1.5rem;
+}
+[href$=".com"]{
+    background: lightblue;
+}
+[href*="wikipedia"]{
+    font-style: italic;
+}

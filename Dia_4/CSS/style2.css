@@ -1,0 +1,94 @@
+@import url(Cabecera.css);
+
+div{
+    border: black;
+}
+
+/*Pseudo Clases*/
+
+/*Posición de hijos*/
+
+li:first-child{
+    font-weight: bold;
+}
+li:last-child{
+    font-style: italic;
+}
+li:nth-child(3) {
+    text-decoration: underline;
+}
+li:nth-last-child(2) {
+    text-shadow: lightcoral;
+}
+li:nth-child(even) {
+    color: blue;
+}
+a:last-child{
+    font-weight: bold;
+}
+/*Por posición de tipo*/
+/*Hay todos los equivalentes a los hijos. Vamos a ver el ejemplo del último*/
+
+a:last-of-type {
+    font-size: 1.3rem;
+}
+
+/*Negación*/
+
+:last-child:not(a){
+    background: lightgrey
+}
+div :last-child:not(a){
+    background: black;
+}
+/* todos los li -exception*/
+li:not(.exception) {
+    background: blue;
+}
+
+/* Pseudoclases dinámicas*/
+
+button :hover{
+    background: green;
+}
+:focus {
+    border: 3px solid red;
+    outline: 3px solid magenta;
+}
+input {
+    border-radius: 10px;
+}
+:required {
+    border: 1px solid red
+}
+
+/*pseudoelementos*/
+
+li:: ::first-letter {
+    font-size: 2rm;
+    color: sienna;
+    background: slateblue;
+}
+
+p::first-line {
+    font-style: italic;
+}
+
+p:: selection{
+    background: rebeccapurple;
+    color: white;
+}
+
+a::before{
+    content: "i";
+}
+
+li::after{
+    content: " a";
+    color: aqua;
+    font-size: 0.5em;
+}
+
+
+
+}
