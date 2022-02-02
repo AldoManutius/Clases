@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    /*Borde: grosor, estilo, color*/
+    border: 1px solid black;
+    /*margen del borde para fuera*/
+    margin: 2rem auto;
+    /*margen hacia dentro*/
+    /*para centrar un texto horizontal, le damos una medida para arriba y abajo y auto para los lados*/
+    padding: 1rem;
+    /*podemos poner hasta cuatro valores (2, 3 o 4) para colocar como queramos la caja*/
+
+    /*ancho y alto caja*/
+    width: 300px;
+    height: 5rem;
+    /*se puede usar :auto; como medida, en el ancho será lo máximo que quepa y en la altura lo mínmino*/
+
+
+}
+p{
+    border: 1px solid red;
+    margin: 3rem;
+    padding: 1rem;
+    width: 70%rem;
+    height: 7rem;
+}
+#visible{
+    overflow: visible;
+}
+
+#auto{
+    overflow: auto;
+}
+
+#hidden{
+    overflow: hidden;
+}
+
+#scroll{
+    overflow-y: scroll;
+}

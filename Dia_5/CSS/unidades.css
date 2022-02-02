@@ -1,0 +1,71 @@
+html{
+    font-size: 16px;
+}
+
+div{
+    border: 1px solid black;
+    font-size: 16px;
+    
+}
+
+h2{
+    border: 1px solid blue;
+}
+
+.px{
+   width: 200px;
+   height: 200px; 
+   margin: 20px;
+   padding: 20px;
+}
+
+.em{
+    /*1em=tamaño de fuente del elemento*/
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    padding: 2em;
+}
+
+.em h2 {
+    font-size: 2rem;
+    padding: 0,5em;
+}
+
+.rem{
+    /*1rem = tamaño de fuente del HTML*/
+    width: 15rem;
+    height: 15rem; 
+    margin: 2rem;
+    padding: 2rem;
+}
+.rem h2 {
+    padding: 0,5rem;
+}
+
+.Vw{
+    width: 25vw;
+    height: 25vw;
+    margin: 5vw;
+    padding: 5vw;
+}
+
+.Vh{
+    width: 30vh;
+    height: 30vh;
+    margin: 3hv;
+    padding: 3vh;
+}
+
+.porcentaje{
+    width: 50%;
+    height: 200%;
+    /*en altura no afecta*/
+    font-size: 200%;
+    margin: 10%;
+    padding: 5%;
+}
+
+/*Siempre hay que usar unidades excepto con 0*/
+
+

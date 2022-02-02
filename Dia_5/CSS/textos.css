@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Supermercado+One&display=swap');
+/* para usar fuentes descargadas en el equipo usa la sentencia @font-face, luego font-family y escribe el nombre. intro y src: url("fonts/lkasjflkasdjf.ttf")*/
+h1 {
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline wavy;
+    /*Cambiar may-min*/
+    /*uppercase, lowercase, capitalize*/
+    text-transform: uppercase;
+    /*sombras: desplazamiento horizontal, vertical, difusión y color*/
+    text-shadow: 5px 3px 10px rgba(44, 44, 54, 0.555);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+/*cursive=escritura a mano; fatasy=fantasia; monospace=cada letra el mismo espacio*/
+
+span {
+    font-weight: bold;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: red;
+}
+
+# 10{
+    text-align: center;
+}
+
+/*tamaño com font size*/
+
+
+

@@ -1,0 +1,43 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 2 rem;
+    width: 15rem;
+    height: ;
+}
+
+#nombre {
+    background: cyan;
+}
+
+#hexa{
+    /*del 00 al ff */
+    background: #ff0000;
+}
+
+#rgb {
+    /*de 0 a 255*/
+    background: rgb(100%, 100%, 0%);
+}
+
+#rgba {
+    /*con transparencia sobre el fondo que va de 0 a 1*/
+    background: rgba(100%, 100%, 0%, 0.5);
+}
+
+#hexaalga {
+    /*en este caso la transparencia va de 00 a ff*/
+    background: #ff00004b;;
+}
+
+#hexaabr {
+    background: #f0a9f0;
+}

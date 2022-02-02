@@ -49,7 +49,7 @@
       </section>
       <section id="formulario">
         <h2>¿Hablamos?</h2>
-        <form action="formulario">
+        <form action="#">
           <fieldset>
             <ul>
               <li>
@@ -62,14 +62,14 @@
               </li>
               <li>
                 <label for="date">Fecha de nacimiento</label>
-                <input type="date" id="date" name="date" value="2022-01-01">
+                <input type="date" id="date" name="date" value="2022-01-01" required>
               </li>
               <li>
-                <label for="comentario">Comentarios</label>
-                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                <label for="coment">Comentarios</label>
+                <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
               </li>
               <li>
-                <input checked type="checkbox" id="checkbox" name="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox">
                 <label for="checkbox">Inscribirme a newsletter</label>
               </li>
             </ul>
@@ -80,9 +80,10 @@
 
     </main>
     <footer>
-      <h6>Términos y condiciones</h6>
-      <h6>Política de privacidad</h6>
+      <a href="">Términos y condiciones</a>
+      <a href="">Política de privacidad</a>
       <h6>©AML 2022</h6>
     </footer>
   </body>
 </html>
+
