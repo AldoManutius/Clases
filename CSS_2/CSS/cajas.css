@@ -27,7 +27,9 @@ p{
     padding: 1rem;
     width: 70%rem;
     height: 7rem;
-}
+    /*bordes redondeados*/
+    border-radius: 5px;
+
 #visible{
     overflow: visible;
 }
@@ -38,6 +40,7 @@ p{
 
 #hidden{
     overflow: hidden;
+    border-bottom-left-radius: 0;
 }
 
 #scroll{

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: gray;
+}
+header{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    min-width: 300px;
+}
+main{
+    background: honeydew;
+    padding: 2rem;
+    max-width: 700px;
+    margin: auto;
+}
+/*los elemenso de linea los margenes solo afecta en horizontal, el padding vertical solo le aecta al borde*/
+/*elementos de línea no tenemos control de las dimensiones*/
+
+/*a{
+    color: aquamarine;
+    border: 1px solid;
+    padding: 1rem;
+    margin: 1rem;
+    height: 10rem;
+    width: 10rem;
+}*/
+
+a{
+    color: aquamarine;
+    display: block;
+    border: 1px solid;
+    width: 5rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+a{
+    border: 1px solid;
+    width: 6rem;
+    height: 3rem;
+    padding: 1rem;
+
+}
+.bloque a{
+    display: block;
+    border: 1px solid black;
+}
+
+.b
+
+header li{
+    display: inline-block;
+    background: white;
+    height: 3rem;
+    width: 5rem;
+   
+}
+
+header li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}

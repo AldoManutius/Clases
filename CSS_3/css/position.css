@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin: 2rem;
+    border: 1px solid black;
+    width: 10rem;
+    height: 10rem;
+    background: yellow
+
+}
+
+.relative{
+    position: relative;
+    /*top gana a bottom, y left a right*/
+    top: 5rem;
+    left: 5rem;
+    right: 5rem;
+    background-color:violet;
+}
+.relative p{
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
+}
+/*respecto al padre más cercano que tenga un position*/
+.absolute{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    /*si tienes medidas fijas top gana a botton y left a right*/
+    /*Si no tiene medidas se adapta a todas las medidas que le pidamos*/
+}
+.absolute p{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.absolute p,
+.hijo-absolute p{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+
+}
+
+.fixed{
+    background-color: tomato;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.sticky{
+    background-color: red;
+    position: sticky;
+   top: 1rem;
+}
+
+
+

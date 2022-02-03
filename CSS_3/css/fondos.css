@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+}
+
+#color{
+    background: rebeccapurple;
+}
+
+.img{
+    background: rebeccapurple;
+    background: url(https://cdn-icons-png.flaticon.com/512/26/26104.png);
+}
+
+.not-repeat{
+    /*background-repeat: no-repeat;*/
+    /*background-repeat-x: no-repeat ;
+    background-repeat-y: no-repeat;
+    background-position: right bottom 2rem;*/
+    background-size: 50%;
+}
+
+.img2{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/26/26104.png);
+}
+/*si queremos que ocupe todo el fondo usaremos cover en vez de contain, aunque no se vea todo la imagen*/
+.cover{
+    background-size: 100%;
+
+}
+/*para fondos que se vea toda la imagen usaremos contain*/
+.contain{
+    background-size: contain;
+}
+
+/*para encajar una fotografía aunque se deforme se unsaría background-size: 100% 100%;*/
+
+

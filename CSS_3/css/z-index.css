@@ -1,0 +1,39 @@
+div{
+    border: 1px solid black;
+    width: 5rem;
+    height: 10rem;
+    position: absolute;
+}
+div:nth-child(2){
+    left: 19rem;
+    background: blue;
+    z-index: 1;
+}
+div:nth-child(3){
+    left: 6rem;
+    background: brown;
+    z-index: 1;
+}
+div:nth-child(4){
+    left: 9rem;
+    background: green;
+}
+div:nth-child(5){
+    left: 12rem;
+    background: indianred;
+    z-index: 1;
+}
+div:nth-child(6){
+    left: 15rem;
+    background: darkblue;
+}
+div:nth-child(7){
+    left: 18rem;
+    background: orange;
+    z-index: 1
+;
+}
+div:nth-child(8){
+    left: 21rem;
+    background: palegreen;
+}
