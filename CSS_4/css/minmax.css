@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+div{
+    border: 1px solid black;
+}
+
+section {
+    margin: 5rem 0;
+    display: grid;
+}
+
+#fit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#fill{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}

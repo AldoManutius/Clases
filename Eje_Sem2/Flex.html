@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Flex</title>
+    <link rel="stylesheet" href="CSS/flex.css" />
+  </head>
+
+  <body>
+      <header>
+          <h1>Royal Hamburguer</h1>
+      </header>
+      <main>
+          <fieldset id="1">
+              <legend>Personaliza tu hamburguesa</legend>
+              <p>Ingredientes</p>
+              <ul>
+                
+                  <li>
+                      <input type="checkbox" id="check1" name="check1">
+                      <label for="check1">Queso</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check2" name="check2">
+                    <label for="check2">Pimiento</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" id="check3" name="check3">
+                          <label for="check3">Cebolla</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check4" name="check4">
+                    <label for="check4">Jamón</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check5" name="check5">
+                    <label for="check5">Huevo</label>
+                  </li>
+
+              </ul>
+              <p>Tamaño</p>
+              <ul>
+                  
+                  <li>
+                    <input type="radio" id="pequeña" name="tamaño">
+                    <label for="pequeña">Pequeña</label>
+                  </li>
+                  <li>
+                      <input type="radio" id="mediana" name="tamaño">
+                      <label for="mediana">Mediana</label>
+                  </li>
+                  <li>
+                      <input type="radio" id="grande" name="tamaño">
+                      <label for="grande">Grande</label>
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset>
+              <legend>Datos de entrega</legend>
+              <label for="text1">Nombre</label>
+              <input type="text" id="text1" name="text1" required>
+              <label for="text2">Dirección</label>
+              <input type="text" id="text2" name="text2" required>
+              <label for="tel">Teléfono</label>
+              <input type="tel" name="tel" id="tel" required>
+              <label for="comentario">Instrucciones especiales</label>
+              <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+          </fieldset>
+          <fieldset>
+              <legend>Método de pago</legend>
+              <label for="pago"></label>
+                <select name="pago" id="pago">
+                    <option value="pago">Tarjeta de crédito</option>
+                    <option value="pago">Efectivo</option>
+                    <option value="pago">Bizzum</option>
+                    <option value="pago">Online</option>
+                </select>
+          </fieldset>
+          <button type="submit">Enviar</button>
+      </main>
+  </body>
+</html>

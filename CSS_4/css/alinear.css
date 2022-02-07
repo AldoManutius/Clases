@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: space-between;
+    align-content: center;
+
+    /*place-content: center-between;*/
+
+    place-items: baseline end;
+   
+}
+
+div{
+    border: 1px solid black;
+}
+
+div:nth-child(6) {
+    justify-self: stretch;
+    place-self: end stretch;
+}
+
+div:nth-child(2) {
+    font-size: 200%;
+}

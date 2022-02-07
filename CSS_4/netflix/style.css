@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+header {
+    background: black;
+    color: white;
+
+    display: grid;
+    grid-auto-flow: column;
+}
+
+header h1{
+    color: red;
+    font-size: 1.2rem;
+}
+
+header menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+header menu button{
+    width: 1.5rem;
+}
+
+header menu {
+    justify-self: end;
+}

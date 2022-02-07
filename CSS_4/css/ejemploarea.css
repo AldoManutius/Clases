@@ -1,0 +1,28 @@
+body{
+    min-height: 100VH;
+    display: grid;
+    grid-auto-rows: 50%;
+    grid-template-areas: "imagen"
+    "texto";
+
+    place-content: center;
+    place-items: center;
+
+    
+
+}
+
+img{
+    grid-area: imagen;
+}
+
+p{
+    grid-area: texto;
+}
+
+@media (min-width: 600px){
+    body{
+        grid-template-areas: "imagen texto";
+    }
+    
+}
