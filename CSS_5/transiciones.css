@@ -1,0 +1,51 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+h1{
+    color: blue;
+    font-size: 3rem;
+    transition-property: color, transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* para dibujar las curvas: https://cubic-bezier.com/*/
+    transition-delay: 1s;
+    transform-origin: bottom left;
+
+}
+
+header:hover h1{
+    color: rgb(236, 14, 14);
+    transform: translate(25rem) rotate(20deg);
+}
+
+div{
+    height: 10rem;
+    width: 10rem;
+    background: cyan;
+    border: 5px inset grey;
+    transition: transform 2s;
+}
+
+div:hover{
+    transform: rotate(180deg)
+}
+
+button{
+    height: 5rem;
+    width: 10rem;
+    background-color: rgb(111,112,249);
+    background: linear-gradient(180deg, rgba(111,112,249,1) 0%, rgba(6,7,20,1) 100%);
+    transform: back;
+}
+
+button:hover{
+    background: rebeccapurple;
+}
+
+/*button:active{
+    background: rgb(111,112,249);
+    background: linear-gradient(0deg, rgba(111,112,249,0) 0%, rgba(6,7,20,1) 100%);
+} para hacer que el botón tenga relive*/

@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgb(68, 44, 44);
+    font-family: sans-serif;
+    color: white;
+}
+
+
+h1{
+    padding: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    animation: aparecer 2s;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+article{
+    background: white;
+    color: black;
+    width: 15rem;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: aparecer 2s;
+    animation-fill-mode: backwards;
+}
+
+img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+article p {
+    margin: 1rem;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+}
+
+article:first-child {
+    animation-delay: 1s;
+}
+
+article:nth-child(2) {
+    animation-delay: 2s;
+}
+
+article:nth-child(3) {
+    animation-delay: 3s;
+}
+
+article:hover {
+    transform:scale(1.1)
+}

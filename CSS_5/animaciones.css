@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    
+    /*visibility: visible;
+     visible o hidden no son transicionales*/
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); 
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes rainbow {
+    0%{
+        color: red;
+    }
+    25%{
+        color: orange;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: green;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+h2{
+    font-size: 2rem;
+    animation: rainbow 5s;
+    animation-iteration-count: infinite;
+}
+
+div{
+    border: 1px solid black;
+    height: 10rem;
+    width: 10rem;
+    background: cyan;
+    animation: locura 3s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes locura{
+   
+    10%{
+        background: yellow;
+    }
+    30%{
+        transform: rotate(60deg) translate(5rem, 10rem);
+    }
+    40%{
+        background: red;
+        transform: rotate(260deg) translate(0, 0);
+        height: 15rem;
+    }
+    70%{
+        background: blue;
+    }
+    
+}
+
+h2
+@keyframes prueba{
+    transform: translateX
+}

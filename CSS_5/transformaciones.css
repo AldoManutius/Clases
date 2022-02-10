@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid black;
+    background: cyan;
+    width: 10rem;
+    height: 10rem;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+div:nth-child(2){
+    transform: scale(0.5);
+}
+
+div:nth-child(3){
+    transform: scale(0.5, 1.5);
+}
+
+div:nth-child(4){
+    transform: translate(5rem, 5rem);
+}
+
+div:nth-child(5){
+    transform: translatex(10rem) translatey(3rem);
+}
+
+div:nth-child(6){
+    transform: rotate(35deg);
+    /*usamos los números negativos para que gire en sentido contrario a las agujas del reloj*/
+    box-shadow: 3px 3px 5px black;
+}
+
+div:nth-child(7){
+    transform: skew(35deg);
+}
+
+div:nth-child(8){
+    transform: skew(20deg, 10deg);
+    /*tranform: skewX(20deg) skewY(10deg)*/
+}
+
+div:nth-child(9){
+    transform: rotate(20deg) skew(-10deg) translate(20rem)
+}
+
+div:nth-child(10){
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
