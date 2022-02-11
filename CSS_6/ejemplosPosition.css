@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --enlaces: rgb(59, 59, 59);
+    --enlacesHover: grey; 
+}
+
+section{
+    height: 50vh;
+}
+
+header{
+    height: 15rem;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h1 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background: var(--enlaces);
+    position: sticky;
+    top: 0;
+}
+
+menu{
+    display: flex;
+    list-style: none;
+    height: 3rem;
+
+}
+
+li{
+    flex-grow: 1;
+}
+
+nav a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav a:hover{
+    background: var(--enlacesHover);
+}
+
+main a{
+    background: var(--enlacesHover);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+
+    position: fixed;
+    right: 0;
+    top: max(calc(100vh - 4rem - 3rem), 20rem);
+    /*bottom: 4rem*/
+}

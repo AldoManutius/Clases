@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --alturaPie: 2rem;
+}
+
+body{
+    /*display: flex;
+    flex-wrap: wrap;*/
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header{
+    background: black;
+    color: white;
+    /*width: 100vw;*/
+    grid-column: span 3;
+}
+
+h1{
+font-family: sans-serif;
+text-align: center;
+}
+
+section{
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+figure{
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+figcaption{
+    height: var(--alturaPie);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --colorPrincipal: rgb(2, 2, 87);
+    --colorSecundario: aliceblue;
+    --shadowColor: rgb(216, 238, 16);
+    --shadow: 2px 2px 5px var(--shadowColor)
+    --espaciado: 4rem;
+
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+html.dark{
+    --colorPrincipal: rgb(107, 107, 233);
+    --colorsecundario: rgb(13, 40, 65);
+    color: #cbeb19;
+}
+
+header{
+    background: var(--colorPrincipal);
+    color: var(--colorSecundario);
+    text-align: center;
+    height: calc(var(--espaciado) * 4 + 2rem )
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 2px var(--shadowColor);
+}
+
+main{
+    height: calc(100vh - 6rem - 2rem);
+}
+
+body{
+    background: var(--colorSecundario);
+}
+
+h2{
+    color: var(--colorPrincipal);
+   padding:  calc(var(--espaciado)* 2);
+}
+p{
+    margin: 1rem;
+
+    /*font-size: clamp(1rem, 5vw, 2rem);*/
+}
+
+button{
+    background: var(--colorPrincipal);
+    color: var(--colorSecundario);
+    padding: 0.5rem 1 rem;
+    margin: 1rem;
+
+    box-shadow: var(--shadow);
+
+}
+
+footer{
+    height: calc(var(--espaciado) * 2);
+    background: gray;
+}
+
+div {
+    background: coral;
+    height: min(10rem, 20vh);
+    /*con min escoge el más pequeño de las dos medidas*/
+    /*con max escoge el tamaño mayor de las dos medidas*/
+    width: calc((100px -10px) * 2);
+}
+
