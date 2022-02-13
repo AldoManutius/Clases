@@ -5,23 +5,69 @@
 }
 
 body{
-    background: rgb(102, 206, 206);
+    min-height: 100vh;
     display: grid;
-    grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: sans-serif;
+    grid-template-rows: 1fr 3fr;
+
+    background: rgb(212, 212, 212);
 }
 
 header{
-    width: 100vw;
-    height: 5rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 02.5rem;
+}
+
+aside{
+    display: none;
+}
+
+menu{
+    padding: 0.5rem;
+    height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(4rem, 1fr));
+    gap: 0.2rem;
+    grid-template-rows: repeat(4, 1 fr);
+
 }
 
 button{
-    background: rgb(212, 212, 212);
-    color: black;
-    font-family: sans-serif;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
 }
 
 button:hover{
     background: grey;
+}
+#igual{
+    background: rgb(119, 196, 199);
+}
+
+#igual:hover{
+    background: cadetblue;
+}
+
+@media (min-width:700px){
+    body{
+        grid-template-columns: 1fr 20rem;
+    }
+    aside{
+        display: block;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+@media (min-width:900px) {
+    html {
+        font-size: 20px;
+    }
 }

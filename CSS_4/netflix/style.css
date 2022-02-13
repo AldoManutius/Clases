@@ -7,25 +7,15 @@
 body{
     min-height: 100vh;
     font-family: sans-serif;
-    background: rgb(48, 47, 47);
-}
-
-button{
-    background: transparent;
-    border: none;
-    cursor: pointer;
 }
 
 header {
-    
-    background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(98,98,98,0) 100%);
+    background: black;
     color: white;
     padding: 0.5rem;
-    height: 4rem;
 
     display: flex;
-    gap: 0.5rem;
-    align-items: center;
+    ;
 }
 
 header h1{
@@ -35,88 +25,23 @@ header h1{
 
 header nav{
     flex-grow: 1;
-    display: flex;
-    align-items: center;
 }
-
 header menu {
     display: flex;
     list-style: none;
     gap: 1rem;
-
-    align-items: center;
-}
-
-
-header menu li{
-    display: flex;
-    align-items: center;
 }
 
 header menu a{
     color: white;
     text-decoration: none;
-    font-size: 1rem;
-}
-
-header > menu{
-    align-items: center;
+    font-size: 0.8rem;
 }
 
 header menu button{
     width: 1.5rem;
-    min-width: fit-content;
-    height: 1.5rem;
-   
-    color: white;
-    text-transform: uppercase;
-
 }
 
-header menu button svg{
-    fill: white;
-    width: 100%;
-    height: 100%; 
+header menu {
+    justify-self: end;
 }
-
-header menu button img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main{
-    padding: 1rem;
-}
-
-main section{
-   
-    color: white;
-}
-main section menu{
-    list-style: none;
-    display: flex;
-    margin: 1rem 0 2rem;
-    gap: 0.5rem;
-    overflow: auto;
-}
-main section menu button{
-    border-radius: 5px;
-    overflow: hidden;
-}
-/* width */
-::-webkit-scrollbar {
-   height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 10px;
-  }
