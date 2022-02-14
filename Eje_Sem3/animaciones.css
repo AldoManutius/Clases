@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  button {
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    animation: like 1s ease-out 0s infinite normal none;
+  }
+  
+
+
+  svg {
+    fill: gray;
+  }
+  
+  @keyframes like{
+      0%{
+          color: grey;
+      }
+      100%{
+          color: red;
+      }
+      transform:scale(1.1)
+  }
+  
+  
