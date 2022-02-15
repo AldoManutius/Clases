@@ -1,0 +1,78 @@
+@import url(./base.css);
+
+body{
+    display: grid;
+    grid-template-rows: 10rem 2rem 1fr 2rem;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;ss
+    justify-content: space-evenly;
+}
+
+/* header form{
+    display: flex;
+} */
+
+header > nav menu {
+    display: flex;
+    gap: 1rem;
+}
+
+/* header li{
+    display: flex;
+    align-items: center;
+} */
+
+body > nav menu{
+    display: flex;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Versión escritorio */
+@media (min-width: 600px){
+    body{
+        grid-template-rows: 5rem 1fr 2rem;
+        grid-template-columns: 10rem 1fr;
+    } 
+    
+    header, footer {
+        grid-column: span 2;
+    }
+    
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    body > nav menu{
+        flex-direction: column;
+    }
+
+    footer{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+}

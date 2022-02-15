@@ -17,7 +17,6 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    animation: like 1s ease-out 0s infinite normal none;
   }
   
 
@@ -25,15 +24,25 @@
   svg {
     fill: gray;
   }
+
+  .like {
+    animation: like 1s;
+    animation-fill-mode: forwards;
+  }
   
   @keyframes like{
-      0%{
-          color: grey;
+      25%{
+        transform: scale(1.2);
+      }
+      50%{
+        transform: scale(1);
+      }
+      75%{
+          transform: scale(1.2);
       }
       100%{
-          color: red;
+        fill: red;
       }
-      transform:scale(1.1)
   }
   
   

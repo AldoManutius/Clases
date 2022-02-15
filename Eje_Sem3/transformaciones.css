@@ -5,67 +5,75 @@
 }
 
 body{
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: 4;
-    text-align: center;
-    text-justify: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* Contenedor */
 
-div{
-    
+div.container{
+    /* --altura: 15rem;
+    --ancho: 15rem */
+    position: relative;
     border: 1px solid black;
-    width: 10rem;
-    height: 10rem;
-    margin: 0;
-    padding: 0;
-}  
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* Cuadrados */
 
+div.container > div{
+    border: 1px solid black;
+    height: 7.5rem;
+    width: 7.5rem;
+    position: absolute;
 
+    transition: transform 0.5s
+    
+}
 
-div:nth-child(5){
+div.topleft{
+    top: 0;
+    left: 0;
     background: red;
-    grid-column: 2;
-    grid-row:  2;
+    transform-origin: top left;
 }
 
-div:nth-child(5):hover{
-    transform: rotate(-45deg);
-}
- 
-div:nth-child(2){
+div.topright{
+    top: 0;
+    right: 0;
     background: yellow;
-    grid-column: 3;
-    grid-row:  2;
+    transform-origin: top right;
 }
 
-div:nth-child(2):hover{
-    transform: rotate(45deg);
-}
-
-div:nth-child(3){
+div.bottomleft{
+    bottom: 0;
+    left: 0;
     background: blue;
-    grid-column: 2;
-    grid-row:  3;
+    transform-origin: bottom left;
 }
 
-div:nth-child(3):hover{
-    transform: rotate(-45deg);
-}
-
-div:nth-child(4){
+div.bottomright{
+    bottom: 0;
+    right: 0;
     background: green;
-    grid-column: 3;
-    grid-row:  3;
+    transform-origin: bottom right;
 }
 
-div:nth-child(4):hover{
-    transform: rotate(45deg);
+/* hover */
+
+div.container:hover div.topleft,
+div.container:hover div.bottomright {
+    transform: rotate(90dg);
+
 }
 
-p{
-    font-family: sans-serif;
-    font-size: 2rem;
+div.container:hover div.topright,
+div.container:hover div.bottomleft {
+    transform: rotate(-90dg);
 }
 
