@@ -27,3 +27,32 @@ console.log(typeof typeof 4.5, "typeof 4.5");
 
 const miTemplateString = `La frase es:
 ${miString}`;
+
+
+// BOOLEANOS
+// Son datos con solo dos valores posibles true/false que equivalen a 1 o 0
+
+const verdadero = true;
+const falso = false; 
+
+console.log(verdadero);
+console.log(typeof verdadero);
+console.log(falso);
+console.log(typeof falso);
+
+// UNDEFINED
+// Es lo que se le asigna a datos sin valor
+
+let valorDesconocido;
+
+console.log(valorDesconocido);
+console.log(typeof valorDesconocido);
+
+// NULL
+// Representa un valor vacio, pero a propósito. Se asigna conscientemente
+
+const valorVacio = null;
+
+console.log(valorVacio);
+console.log(typeof valorVacio);
+
