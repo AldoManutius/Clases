@@ -12,6 +12,7 @@ for(let i = 0; i < 10; i++){
 
 // Este es el bucle más habitual cambiando el número de vueltas
 console.log("Bucle más habitual");
+
 let vueltas = 10
 // empieza en 0
 
