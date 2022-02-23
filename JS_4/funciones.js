@@ -84,3 +84,18 @@ console.log(suma(1024, 578));
 
 const resultado = suma(7, 9);
 console.log(resultado);
+
+
+// Cuando una función entra a un return, para
+
+function(){
+    for(let i = 0; i < 10; 1++){
+
+        if(i === 5){
+            return "es igual a 5"
+        }
+    
+        console.log(i);
+    }
+    return "se acabo el bucle"
+}
