@@ -1,6 +1,6 @@
 "use strict";
 
-const staff = {
+const edad = {
     Juan: 26,
     Rosa: 35,
     Pepe: 53,
@@ -11,12 +11,33 @@ const staff = {
     Rebeca: 10,
 }
 
-for(const persona in edad){
-    console.log(`${persona} es mayor de edad`);
-    if {edad >= 18
-    } else {
-        console.log(`${persona} es menor de edad`);
-    }
+/* for(const nombre in edad){
+if(edad[nombre] < 18){
+    console.log(`${nombre} es menor de edad`);
+} else {console.log(`${nombre} es mayor de edad`);}
+} */
+
+function mayorEdad(a){
+    for(const nombre in a){
+        if(a[nombre] < 18){
+            console.log(`${nombre} es menor de edad`);
+        } else {console.log(`${nombre} es mayor de edad`);}
+        }
 }
 
+const miObj = {
+    Juan: 56,
+    Pedro: 23, 
+    Lucia: 56,
+    Alberto: 25,
+    Ruben: 2,  
+    Rosalia: 18, 
+    Hugo: 65, 
+    JoseLuis: 32, 
+    Esmeralda: 23,
+    Marina: 10,
+}
 
+console.log(mayorEdad(edad));
+
+console.log(mayorEdad(miObj));

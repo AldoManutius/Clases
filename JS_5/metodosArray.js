@@ -24,7 +24,7 @@ console.log(miArr);
 
 console.log(miArr); */
 
-// Podemos usar Sprad para sacar los elementos de dentro de un Array. 
+// Podemos usar Spread para sacar los elementos de dentro de un Array. 
 
 console.log("Spread");
 
