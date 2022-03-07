@@ -1,0 +1,12 @@
+.destacado{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.grande{
+    font-size: 2rem;
+}
+
+.rojo{
+    color: red;
+}
