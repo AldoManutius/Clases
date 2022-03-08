@@ -52,6 +52,34 @@ console.log(eliminaDuplicado(names));
 
 console.log(eliminaDuplicado(numbers));
 
+console.log("");
+
+console.log("Con set");
+
+function deleteDupliSet(arr){
+    const set = new Set(arr)
+    return [...set]
+}
+
+console.log(deleteDupliSet(names));
+
+console.log("");
+
+console.log("Con filter");
+
+function deleteDupFilter(arr){
+
+  /*   for(let i = 0; i < arr.length; i++){
+        const name = arr[i]
+        console.log(name, i, arr.indexOf(name));
+    } */
+    return arr.filter((names, index) => arr.indexOf(names) === index)
+}
+
+deleteDupFilter(names)
+
+
+
 
 
 
