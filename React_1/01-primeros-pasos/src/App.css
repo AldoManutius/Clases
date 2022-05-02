@@ -1,0 +1,19 @@
+.active {
+  color: red
+  
+}
+
+.diseable {
+  color: gray;
+}
+
+.active, .diseable {
+  border: 1px solid black;
+  padding: auto;
+  margin: auto;
+}
+
+a {
+  color: inherit
+}
+
